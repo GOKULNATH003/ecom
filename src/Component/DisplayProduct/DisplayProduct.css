@@ -1,0 +1,9 @@
+.imageContainer{
+    width: 80%;
+    overflow: scroll;
+    display: flex;
+    gap: 20px;
+    height: 30vh;
+    object-fit: cover;
+    justify-content: center;
+}

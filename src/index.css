@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: "marck";
+  src: url(./Assets/fonts/MarckScript-Regular.ttf);
+}
+@font-face {
+  font-family: "quest";
+  src: url(./Assets/fonts/Questrial-Regular.ttf);
+}
+
+.d-flex{
+  display: flex;
+}
+.fdc{
+  flex-direction: column;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.justify-around{
+  justify-content: space-around;
+}
+.justify-evenly{
+  justify-content: space-evenly;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.justify-end{
+  justify-content: flex-end;
+}
+.align-center{
+  align-items: center;
+}
+.align-items-start{
+  align-items: flex-start;
+}
+.align-items-end{
+  align-items: flex-end;
+}
+.g1{
+  gap: 10px;
+}
+.g2{
+  gap: 20px;
+}
+.g3{
+  gap: 30px;
+}
+.g4{
+  gap: 40px;
+}
+.g5{
+  gap: 50px;
+}
+.g6{
+  gap: 60px;
+}
+.g7{
+  gap: 70px;
+}
+
+.g8{
+  gap: 80px;
+}
+.g9{
+  gap: 90px;
+}
+.g10{
+  gap: 100px;
+}
+.p1{
+  padding: 10px;
+}
+.p2{
+  padding: 20px;
+}
+.p3{
+  padding: 30px;
+}
+.p4{
+  padding: 40px;
+}
+.p5{
+  padding: 50px;
+}
+.p6{
+  padding: 60px;
+}
+.p7{
+  padding: 70px;
+}
+.p8{
+  padding: 80px;
+}
+.p9{
+  padding: 90px;
+}
+.p10{
+  padding: 100px;
+}
+.pt1{
+  padding-top: 10px;
+}
+.pt2{
+  padding-top: 20px;
+}
+.pt3{
+  padding-top: 30px;
+}
+.pt4{
+  padding-top: 40px;
+}
+.pt5{
+  padding-top: 50px;
+}
+.pt6{
+  padding-top: 60px;
+}
+.pt7{
+  padding-top: 70px;
+}
+.pt8{
+  padding-top: 80px;
+}
+.pt9{
+  padding-top: 90px;
+}
+.pt10{
+  padding-top: 100px;
+}
+.pb1{
+  padding-bottom: 10px;
+}
+.pb2{
+  padding-bottom: 20px;
+}
+.pb3{
+  padding-bottom: 30px;
+}
+.pb4{
+  padding-bottom: 40px;
+}
+.pb5{
+  padding-bottom: 50px;
+}
+.pb6{
+  padding-bottom: 60px;
+}
+.pb7{
+  padding-bottom: 70px;
+}
+.pb8{
+  padding-bottom: 80px;
+}
+.pb9{
+  padding-bottom: 90px;
+}
+.pb10{
+  padding-bottom: 100px;
+}
+.px1{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.px2{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.px3{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.px4{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.px5{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.px6{
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.px7{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.px8{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.px9{
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.px10{
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.py1{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.py2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.py3{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.py4{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.py5{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.py6{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.py7{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.py8{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.py9{
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.py10{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.text-center{
+  text-align: center;
+}
+.text-end{
+  text-align: right;
+}
+.text-start{
+  text-align: left;
+}
+.pointer{
+  cursor: pointer;
+}
+.danger{
+  color: red;
+}
+.warning{
+  color: yellow;
+}
+.success{
+  color: green;
+}
+.info{
+  color: blue;
+}
+.icon{
+  width: 50px;
+  transition: .3s;
+  cursor: pointer;
+  
+}
+.icon:hover{
+  transform: scale(1.1);
+}

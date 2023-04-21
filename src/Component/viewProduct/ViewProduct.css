@@ -1,0 +1,21 @@
+.view_card{
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 2px 5px black;
+    border-radius: 5px;
+    transition: .3s;
+    
+}
+.view_card:hover{
+    transform: scale(1.05);
+}
+.viewcategory_container{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.prod_images{
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
