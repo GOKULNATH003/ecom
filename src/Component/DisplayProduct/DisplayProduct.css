@@ -1,9 +1,58 @@
 .imageContainer{
-    width: 80%;
-    overflow: scroll;
+    /* width: 50%;
     display: flex;
-    gap: 20px;
-    height: 30vh;
-    object-fit: cover;
-    justify-content: center;
+    overflow: hidden;
+    height: 300px;
+    gap:50px; */
+}
+
+.image_size{
+    width: 100%;
+    height: 400px;
+   object-fit: contain;
+   border-radius: 10px;
+}
+.add_animate{
+    
+    animation: animate 1s linear ;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+.left_arr{
+    position: absolute;
+    left: 20px;
+    top: 45%;
+    padding: 10px;
+    backdrop-filter: blur(4px);
+    background-color: transparent;
+    color: cadetblue;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+
+}
+.right_arr{
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    padding: 10px;
+    color: cadetblue;
+
+    backdrop-filter: blur(4px);
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+
+
+}
+.slide_container{
+    width: 50%;
+    height: 400px;
+    position: relative;
 }

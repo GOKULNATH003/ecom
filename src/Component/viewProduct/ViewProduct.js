@@ -18,8 +18,8 @@ export default function ViewProduct() {
             <div className="viewcategory_container">
                 {daata?.map((item) => {
                     return (
-                        <div className="view_card" onClick={() => { handleVIewroduct(item) }}>
-                            <img src={item.thumbnail} lazy className="prod_images" alt="" />
+                        <div className="view_card pointer" onClick={() => { handleVIewroduct(item) }}>
+                            <img src={item.thumbnail} lazy className="" alt="" />
                             <p>{item.title} - {item?.brand}</p>
                             <p>Des:{item.description}</p>
                             <p>Price:{item.price}</p>

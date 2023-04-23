@@ -46,7 +46,7 @@ export default function Category() {
 
                         return (
 
-                            <div className="card_container" key={item + index.toString()} onClick={() => { handleCategory(item) }}>
+                            <div className="card_container pointer" key={item + index.toString()} onClick={() => { handleCategory(item) }}>
 
                                 <img src={img} className="Product_frame" alt="" />
                                 <p>{item}</p>

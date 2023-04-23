@@ -1,9 +1,12 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './DisplayProduct.css'
 export default function DisplayProduct() {
     const DisplayProd = JSON.parse(localStorage.getItem("DisplayProd"))
+    const [imageIndex, setImageIndex] = useState(0)
+
     const [fav, setFav] = useState(false)
     const [cart, setCart] = useState(false);
+    const ImgRef = useRef()
     console.log(DisplayProd)
     const wishlister = JSON.parse(localStorage.getItem("wishlister"))
     const cartData = JSON.parse(localStorage.getItem("cart"))
@@ -41,7 +44,7 @@ export default function DisplayProduct() {
                     localStorage.setItem("wishlister", JSON.stringify(wishlister))
                 }
                 break;
-            
+
             case 'removewishlist':
                 setFav(false);
                 wishlister.forEach((item, index) => {
@@ -61,7 +64,7 @@ export default function DisplayProduct() {
                 break;
             case 'removecart':
                 setCart(false);
-                cartData.forEach((item,index) => {
+                cartData.forEach((item, index) => {
                     if (item.id === DisplayProd.id) {
                         cartData.splice(index, 1)
                         localStorage.setItem("cart", JSON.stringify(cartData))
@@ -70,23 +73,60 @@ export default function DisplayProduct() {
 
         }
     }
+    function handleslide(state) {
+        // debugger
+        // if (imageIndex <=DisplayProd.images.length-1) {
+        switch (state) {
+            case "reduce":
+                if (imageIndex <= 0) {
+                    setImageIndex(DisplayProd.images.length - 1)
+                }
+                else {
+
+                    setImageIndex(imageIndex - 1)
+                }
+                break;
+            case "add":
+                if (imageIndex <= DisplayProd.images.length - 2) {
+
+                    setImageIndex(imageIndex + 1)
+                }
+                else {
+                    setImageIndex(0)
+                }
+                break;
+            default:
+                setImageIndex(0)
+        }
+        // }
+        // else{
+        //     setImageIndex(0)
+        // }
+
+
+    }
 
 
 
-
-
+    console.log(imageIndex)
     return (
 
         <div className=' py5 d-flex justify-center fdc align-center'>
+            <div className='slide_container'>
 
-            <div className="d-flex imageContainer">
-                {
+
+                <button  className='pointer left_arr' onClick={() => { handleslide("reduce") }}> &lt;--- </button>
+                <img className='image_size' ref={ImgRef} src={DisplayProd.images[imageIndex]} alt="" />
+                {/* <div className=" imageContainer"> */}
+                {/* {
                     DisplayProd.images.map((item) => {
                         return (
-                            <img src={item} alt="" />
-                        )
-                    })
-                }
+                            <img src={item} className='image_size' style={{ transform: `translateX(-${100 * imageIndex}%)` }} alt="" />
+                            )
+                        })
+                } */}
+                {/* </div> */}
+                <button className='pointer right_arr' onClick={() => { handleslide("add") }}> ---&gt; </button>
             </div>
             <div className='text-start'>
                 <p>{DisplayProd.brand}</p>

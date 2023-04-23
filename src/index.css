@@ -74,6 +74,9 @@ code {
 .g7{
   gap: 70px;
 }
+.fs09{
+  font-size: 0.9rem;
+}
 
 .g8{
   gap: 80px;
@@ -286,4 +289,20 @@ code {
 }
 .icon:hover{
   transform: scale(1.1);
+}
+.text-line{
+
+  text-decoration: line-through;
+}
+.light_black{
+  color: #505050;
+}
+.lb30{
+  color: #303030;
+}
+.justify{
+  text-align: justify;
+}
+.color_r{
+  color: rgb(207, 46, 46);
 }
