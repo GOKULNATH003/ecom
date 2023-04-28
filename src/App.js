@@ -21,7 +21,7 @@ function App() {
         <Router>
           <Header />
           <Routes>
-            <Route path='/' element={<HomeContent />} />
+            <Route path='/ecom' element={<HomeContent />} />
             <Route exact path="/products" element={<Home />} />
             <Route exact path="/viewprod" element={<ViewProduct />} />
             <Route exact path="/displayproduct" element={<DisplayProduct />} />

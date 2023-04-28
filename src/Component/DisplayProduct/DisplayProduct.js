@@ -61,7 +61,7 @@ export default function DisplayProduct() {
         }
         alert("Order Placed")
         setPreView(false)
-        navigator("/")
+        navigator("/ecom")
     }
 
     function handlewishcart(e) {
