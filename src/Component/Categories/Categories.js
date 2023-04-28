@@ -1,7 +1,11 @@
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import { NewContext } from "../../App"
+import axios from "axios"
+import './Categories.css'
+import { useNavigate } from "react-router-dom"
 
 export default function Category() {
+    const navigator=useNavigate()
     const [categories, setCategories] = useState()
     useEffect(() => {
         const config = {
@@ -29,7 +33,6 @@ export default function Category() {
         }
         axios(config).then((res) => {
             console.log(res)
-            setViewCategory(res.data.products)
             localStorage.setItem("ViewProds", JSON.stringify(res.data.products))
             navigator("/viewprod")
         }).catch((err) => {
@@ -46,11 +49,8 @@ export default function Category() {
 
                         return (
 
-                            <div className="card_container pointer" key={item + index.toString()} onClick={() => { handleCategory(item) }}>
 
-                                <img src={img} className="Product_frame" alt="" />
-                                <p>{item}</p>
-                            </div>
+                                <p key={index} className="pointer" onClick={()=>{handleCategory(item)}}>{item}</p>
 
                         )
                     })

@@ -48,7 +48,7 @@ export default function Home() {
                                     <img src={item.thumbnail} className="card_image" alt="" />
                                     <p className="lb30">{item.title}</p>
                                     <p className="lb30 fs09">{item.description}</p>
-                                    <div>₹ {item.price} <sub className="text-line light_black">₹{parseInt(item?.price/ (1 - item.discountPercentage/100))}</sub><span className="color_r"> {item.discountPercentage}%  </span>offer</div>
+                                    <div>₹ {item.price} <sub className="text-line light_black">₹{parseInt(item?.price / (1 - item.discountPercentage / 100))}</sub><span className="color_r"> {item.discountPercentage}%  </span>offer</div>
                                 </div>
                             </div>
                         )

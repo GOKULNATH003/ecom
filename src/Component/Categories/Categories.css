@@ -1,0 +1,34 @@
+.categories_list{
+    position: fixed;
+    width: 20%;
+    background-color:white;
+    height: 100vh;
+    overflow-y: scroll;
+    top: 0;
+    right: 0;
+    text-align: start;
+    box-sizing: content-box;
+    transition: .3s;
+    animation: animateslide .3s linear;
+}
+@keyframes animateslide {
+    0%{
+        right: -100%;
+
+    }
+    100%{
+        right: 0;
+    }
+    
+}
+
+
+.categories_list p{
+border-bottom: 1px solid #e0e0e0;
+padding:10px 20px;
+margin: 0;
+
+}
+.categories_list p:hover{
+    background-color: #e0e0e0;
+}
