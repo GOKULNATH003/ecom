@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/GOKULNATH003/ecom.git/static/css/main.1a4eeb4c.css",
+    "main.js": "/GOKULNATH003/ecom.git/static/js/main.90e514b4.js",
+    "static/js/787.34115356.chunk.js": "/GOKULNATH003/ecom.git/static/js/787.34115356.chunk.js",
+    "static/media/girl1.png": "/GOKULNATH003/ecom.git/static/media/girl1.a938d839cca384e0c3cf.png",
+    "static/media/Questrial-Regular.ttf": "/GOKULNATH003/ecom.git/static/media/Questrial-Regular.8268e81790f4302669b7.ttf",
+    "static/media/girl2.png": "/GOKULNATH003/ecom.git/static/media/girl2.b36088b950d30ca09ce8.png",
+    "static/media/MarckScript-Regular.ttf": "/GOKULNATH003/ecom.git/static/media/MarckScript-Regular.5b6142752f3269576cc7.ttf",
+    "static/media/logo.png": "/GOKULNATH003/ecom.git/static/media/logo.e746899c1e11e9a35f9d.png",
+    "static/media/img.jpg": "/GOKULNATH003/ecom.git/static/media/img.a22a19bf14512bfa1b4b.jpg",
+    "static/media/del.png": "/GOKULNATH003/ecom.git/static/media/del.463b629f4c581a98a090.png",
+    "static/media/cart.png": "/GOKULNATH003/ecom.git/static/media/cart.e74f61edf5e0d2231aed.png",
+    "static/media/box.png": "/GOKULNATH003/ecom.git/static/media/box.2ce7a7721e2e4d1c9ba4.png",
+    "static/media/category.png": "/GOKULNATH003/ecom.git/static/media/category.47c988417cf233d32ca9.png",
+    "static/media/logo.svg": "/GOKULNATH003/ecom.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/GOKULNATH003/ecom.git/index.html",
+    "main.1a4eeb4c.css.map": "/GOKULNATH003/ecom.git/static/css/main.1a4eeb4c.css.map",
+    "main.90e514b4.js.map": "/GOKULNATH003/ecom.git/static/js/main.90e514b4.js.map",
+    "787.34115356.chunk.js.map": "/GOKULNATH003/ecom.git/static/js/787.34115356.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a4eeb4c.css",
+    "static/js/main.90e514b4.js"
+  ]
+}
