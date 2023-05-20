@@ -1,7 +1,11 @@
 .categories_list{
     position: fixed;
     width: 20%;
-    background-color:white;
+    background-color:#212333;
+    border-left: 5px solid #e0e0e0;
+    border-top: 5px solid #e0e0e0;
+    border-bottom: 5px solid #e0e0e0;
+    color:white;
     height: 100vh;
     overflow-y: scroll;
     top: 0;
@@ -10,6 +14,9 @@
     box-sizing: content-box;
     transition: .3s;
     animation: animateslide .3s linear;
+}
+.category_text:hover{
+    color: #303030;
 }
 @keyframes animateslide {
     0%{
@@ -31,4 +38,19 @@ margin: 0;
 }
 .categories_list p:hover{
     background-color: #e0e0e0;
+}
+@media screen and (max-width:767px) {
+    .categories_list{
+        position: fixed;
+        width: 45%;
+        background-color:#212333;
+        height: 100vh;
+        overflow-y: scroll;
+        top: 0;
+        right: 0;
+        text-align: start;
+        box-sizing: content-box;
+        transition: .3s;
+        animation: animateslide .3s linear;
+    }
 }

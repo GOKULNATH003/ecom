@@ -165,9 +165,9 @@ export default function DisplayProduct() {
                     <p>{DisplayProd.description}</p>
                     <div className=' d-flex'>₹{DisplayProd.price} &nbsp; <sub className="text-line light_black">₹{parseInt(DisplayProd?.price / (1 - DisplayProd.discountPercentage / 100))}</sub> &nbsp;<span className="color_r"> {DisplayProd.discountPercentage}%  </span>offer</div>
                     <p>{DisplayProd.stock} stocks available</p>
-                    <Rating name="read-only" value={DisplayProd.rating} readOnly />
-                    {fav ? <p className='danger pointer' id='removewishlist' onClick={(e) => { handlewishcart(e) }}>Remove from wish list</p> : <p className='info pointer' id='addwishlist' onClick={(e) => { handlewishcart(e) }}>add to wish list</p>}
-                    {cart ? <p className='danger pointer' id='removecart' onClick={(e) => { handlewishcart(e) }}>Remove from Cart</p> : <p className='info pointer' id='addcart' onClick={(e) => { handlewishcart(e) }}>add to Cart</p>}
+                    <Rating name="half-rating-read"  defaultValue={2.5} precision={0.5} readOnly value={DisplayProd.rating}  />
+                    {fav ? <p className='danger pointer' id='removewishlist' onClick={(e) => { handlewishcart(e) }}>Remove from wish list</p> : <p className='warning pointer' id='addwishlist' onClick={(e) => { handlewishcart(e) }}>add to wish list</p>}
+                    {cart ? <p className='danger pointer' id='removecart' onClick={(e) => { handlewishcart(e) }}>Remove from Cart</p> : <p className='warning pointer' id='addcart' onClick={(e) => { handlewishcart(e) }}>add to Cart</p>}
                     <button className="buynow_btn pointer" onClick={() => { handleClick() }}>Buy Now</button>
                 </div>
                 {preview &&
@@ -224,12 +224,12 @@ const Preview = ({ DisplayProd, getInput, setGetInput, handleSubmit, setPreView 
                     </div>
                 </div>
                 <div>
-                    < form onSubmit={handleSubmit} >
+                    < form onSubmit={handleSubmit} autoComplete='off' >
 
                         <div className='input_cont'>
 
                             <label>Mobile Number  :</label>
-                            <input type="text" required name='mobNumber' maxLength={10} value={getInput?.mobNumber} onChange={handleChange} />
+                            <input type="text" required name='mobNumber' maxLength={10} value={getInput?.mobNumber} pattern='[6789]{1}[0-9]{9}' title='Enter Valid Number' onChange={handleChange} />
                         </div>
                         <div className='input_cont'>
 
@@ -245,7 +245,7 @@ const Preview = ({ DisplayProd, getInput, setGetInput, handleSubmit, setPreView 
                         <p>{getInput.quantity * DisplayProd.price}</p>
                         {getInput?.quantity<=DisplayProd?.stock?
 
-                            <input type="submit" className='pointer' value="Submit" id="" />:
+                            <input type="submit" className='pointer buynow_btn' value="Submit" id="" />:
                             <p className='danger'>Out of Stock</p>
                         }
                     </form>

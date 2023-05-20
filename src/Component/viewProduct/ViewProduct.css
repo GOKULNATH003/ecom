@@ -8,6 +8,7 @@
 }
 .view_card:hover{
     transform: scale(1.05);
+    
 }
 .viewcategory_container{
     display: flex;

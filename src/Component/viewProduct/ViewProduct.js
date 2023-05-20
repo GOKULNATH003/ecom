@@ -14,15 +14,15 @@ export default function ViewProduct() {
     return (
 
         <>
-            <h1>{daata[0]?.category}</h1>
+            <h1 className="text_white">{daata[0]?.category}</h1>
             <div className="prods_container">
                 {daata?.map((item) => {
                     return (
                         <div className="card_container" onClick={() => { handleVIewroduct(item) }}   >
                             <div className="">
                                 <img src={item.thumbnail} className="card_image" alt="" />
-                                <p className="lb30">{item.title}</p>
-                                <p className="lb30 fs09">{item.description}</p>
+                                <p className="">{item.title}</p>
+                                <p className=" fs09">{item.description}</p>
                                 <div>₹ {item.price} <sub className="text-line light_black">₹{parseInt(item?.price / (1 - item.discountPercentage / 100))}</sub><span className="color_r"> {item.discountPercentage}%  </span>offer</div>
                             </div>
                         </div>

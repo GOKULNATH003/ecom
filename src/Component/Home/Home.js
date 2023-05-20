@@ -44,10 +44,11 @@ export default function Home() {
                     data?.map((item) => {
                         return (
                             <div className="card_container" onClick={() => { handleVIewroduct(item) }}   >
-                                <div className="">
+                                <div className="text_white">
+
                                     <img src={item.thumbnail} className="card_image" alt="" />
-                                    <p className="lb30">{item.title}</p>
-                                    <p className="lb30 fs09">{item.description}</p>
+                                    <p className=" text_white">{item.title}</p>
+                                    <p className=" fs09 text_white">{item.description}</p>
                                     <div>₹ {item.price} <sub className="text-line light_black">₹{parseInt(item?.price / (1 - item.discountPercentage / 100))}</sub><span className="color_r"> {item.discountPercentage}%  </span>offer</div>
                                 </div>
                             </div>

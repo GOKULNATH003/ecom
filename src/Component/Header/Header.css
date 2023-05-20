@@ -1,15 +1,42 @@
+.header_right_content p{
+ color: white;       
+ font-family: "quest";
+ 
+}
 @media screen and (min-width:767px) {
 
     .Header_container {
         height: 100px;
         padding:6vw
     }
+    .header_right_content p{
+      color: white;       
+      font-family: "quest";
+      font-size: 1.3vw;
+      padding: 10px;
+      transition: .3s;
+      
+     }
+     .header_right_content p:hover{
+      transform: scale(1.1);
+      border-radius: 8px;
+      box-shadow: 13px 13px 25px #13141d,-13px -13px 25px #2f3249
+       ;
+
+     }
    
      .icon{
         width: 50px;
         transition: .3s;
         cursor: pointer;
         
+        
+      }
+      
+      .icon1{
+        mix-blend-mode: color;
+
+
       }
       .icon:hover{
         transform: scale(1.1);
@@ -33,11 +60,15 @@
     }
 }
 @media screen and (max-width:766px) {
-
+  .header_right_content p{
+    color: white;       
+    font-family: "quest";
+    
+   }
     .Header_container {
         width: 100%;
         height: 50px;
-        padding: 0 20px;
+        padding: 40px 20px;
     }
 .header_right_content{
     padding: 0 !important;
@@ -70,5 +101,8 @@
 
     .logo {
         width: 50px;
+    }
+    .header_links{
+      padding: 10px 0
     }
 }

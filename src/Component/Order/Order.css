@@ -11,71 +11,125 @@
     align-items:center
 
 } */
-.wishlist-layer{
-    width :80%;
-    height:85vh;
-    background-color:#e0e0e0;
-    border-radius:8px;
+.wishlist-layer {
+    width: 80%;
+    height: 85vh;
+    border: 5px solid #e0e0e0;
+    background-color: #212333;
+
+
+    border-radius: 8px;
     transition: .5s;
-    animation: animatelike .5s linear ;
+    animation: animatelike .5s linear;
     overflow-y: scroll;
     padding: 30px;
 }
+
 @keyframes animatelike {
-    0%{
-        transform:scale(0.50)
+    0% {
+        transform: scale(0.50)
     }
-    50%{
+
+    50% {
         transform: scale(1.1);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
-    
+
 }
 
-.card{
-    background-color:rgb(255, 255, 255);
-    border-radius: 8px;
+.card {
+    background-color: #212333;
+
+    color: white;
+    border: 3px solid #e0e0e0;
+    transition: .3s;
+    padding: 0px;
     /* display:flex;
     padding: 20px;
     margin: 10px;
     align-items:center */
 }
-.card_image{
-    width:150px;
-    height:50px;
-    object-fit:cover
-}
-.card p{
-    text-align:start
+
+.card:hover {
+    border-radius: 8px;
+    box-shadow: 13px 13px 25px #13141d, -13px -13px 25px #2f3249;
+    border: 3px solid transparent;
+    transform: scale(1.01);
+    cursor: pointer;
 
 }
-.card{
-/* display:grid;
-grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 0px;
-grid-row-gap: 0px; 
-align-items:center;
-justify-content: center;
-margin:20px 20px; */
 
+.card_image {
+    width: 150px;
+    height: 50px;
+    object-fit: cover
 }
-.del_img{
+
+.card p {
+    text-align: start
+}
+
+.del_img {
     width: 50px;
-    
+    transition: .3s;
+
 }
-.cancel_order{
-    background-color: #e0e0e0;
-    padding: 10px;
+
+.del_img:hover {
+    transform: scale(1.1);
+}
+
+.cancel_order {
+    background-color: #ff6b6b;
+    padding: 10px 10px;
     border-radius: 8px;
     border: 1px solid black;
     cursor: pointer;
     transition: .3s;
+    transform: translateX(-1vw) !important;
+    display: inline-block;
 }
-.cancel_order:hover{
-    background-color: black;
+
+.cancel_order:hover {
+    background-color: #ff3030;
     border: 1px solid white;
     color: white;
+}
+
+.card p {
+    text-transform: capitalize;
+}
+.layer_del{
+    height:100% !important
+}
+
+@media screen and (max-width:767px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 10px;
+    }
+.card_image_layer{
+    width: 50vw;
+    height: 40vw;
+    border-radius: 2px;
+    object-fit: cover;
+    padding-top: 5px;
+}
+    .card p {
+        width: 100% !important;
+        text-align: center;
+        padding: 0 !important;
+        margin: 5px !important;
+    }
+
+    .card div {
+        width: 100% !important;
+    }
+
 }

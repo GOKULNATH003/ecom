@@ -50,7 +50,7 @@ export default function Category() {
                         return (
 
 
-                                <p key={index} className="pointer" onClick={()=>{handleCategory(item)}}>{item}</p>
+                                <p key={index} className="pointer  category_text" onClick={()=>{handleCategory(item)}}>{item}</p>
 
                         )
                     })
