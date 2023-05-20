@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/GOKULNATH003/ecom/static/css/main.4d8a3afc.css",
-    "main.js": "/GOKULNATH003/ecom/static/js/main.32af25d1.js",
+    "main.css": "/GOKULNATH003/ecom/static/css/main.33155daf.css",
+    "main.js": "/GOKULNATH003/ecom/static/js/main.f5073847.js",
     "static/js/787.34115356.chunk.js": "/GOKULNATH003/ecom/static/js/787.34115356.chunk.js",
     "static/media/girl1.png": "/GOKULNATH003/ecom/static/media/girl1.a938d839cca384e0c3cf.png",
     "static/media/Questrial-Regular.ttf": "/GOKULNATH003/ecom/static/media/Questrial-Regular.8268e81790f4302669b7.ttf",
@@ -15,12 +15,12 @@
     "static/media/category.png": "/GOKULNATH003/ecom/static/media/category.47c988417cf233d32ca9.png",
     "static/media/logo.svg": "/GOKULNATH003/ecom/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/GOKULNATH003/ecom/index.html",
-    "main.4d8a3afc.css.map": "/GOKULNATH003/ecom/static/css/main.4d8a3afc.css.map",
-    "main.32af25d1.js.map": "/GOKULNATH003/ecom/static/js/main.32af25d1.js.map",
+    "main.33155daf.css.map": "/GOKULNATH003/ecom/static/css/main.33155daf.css.map",
+    "main.f5073847.js.map": "/GOKULNATH003/ecom/static/js/main.f5073847.js.map",
     "787.34115356.chunk.js.map": "/GOKULNATH003/ecom/static/js/787.34115356.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d8a3afc.css",
-    "static/js/main.32af25d1.js"
+    "static/css/main.33155daf.css",
+    "static/js/main.f5073847.js"
   ]
 }
