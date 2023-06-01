@@ -5,6 +5,12 @@
     object-fit: contain;
     border-radius: 10px;
   }
+  .heart_img{
+    position:absolute;
+    top:10px;
+    right:20px;
+    width:30px !important
+  }
 
   .add_animate {
     animation: animate 1s linear;
@@ -153,15 +159,28 @@
 
 @media screen and (max-width: 767px) {
   .image_size {
-    width: 100% !important;
+    width: 90% !important;
     height: 200px !important;
-    object-fit: contain !important;
+    object-fit: co !important;
+  }
+  .buynow_btn {
+    background-color: rgb(255, 123, 0);
+    border: 1px solid rgb(214, 214, 214);
+    padding: 10px;
+    color: white;
+    transition: 0.3s;
   }
   .dp_bottom {
     color: white;
   }
   .add_animate {
     animation: animate 1s linear;
+  }
+  .heart_img{
+    position:absolute;
+    top:10px;
+    right:10vw;
+    width:30px !important
   }
 
   @keyframes animate {
@@ -261,6 +280,7 @@
     left: 0;
     position: absolute;
   }
+  
 
   .input_cont {
     display: flex;

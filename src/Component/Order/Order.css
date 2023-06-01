@@ -44,7 +44,6 @@
     background-color: #212333;
 
     color: white;
-    border: 3px solid #e0e0e0;
     transition: .3s;
     padding: 0px;
     /* display:flex;
@@ -56,7 +55,6 @@
 .card:hover {
     border-radius: 8px;
     box-shadow: 13px 13px 25px #13141d, -13px -13px 25px #2f3249;
-    border: 3px solid transparent;
     transform: scale(1.01);
     cursor: pointer;
 
@@ -119,7 +117,7 @@
     height: 40vw;
     border-radius: 2px;
     object-fit: cover;
-    padding-top: 5px;
+    padding-top: 5p;
 }
     .card p {
         width: 100% !important;

@@ -15,7 +15,7 @@ export default function Order() {
     return (
         <div className="wishlist-layer" onClick={(e) => { e.stopPropagation() }}>
             <h1 className='text-center text_white'>Orders</h1>
-            <div className="d-flex fdc g2">{
+            <div className="d-flex fdc g3">{
                 Order?.map((item) => {
                     return (
                         <div className="card">

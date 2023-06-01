@@ -24,7 +24,7 @@ export default function Whishlist({ setFav }) {
     return (
         <div className="wishlist-layer" onClick={(e) => { e.stopPropagation() }}>
             <h1 className='text-center text_white'>Wishlist</h1>
-            <div className="d-flex fdc g2  ">{
+            <div className="d-flex fdc g3  ">{
                 wishlist?.map((item) => {
                     return (
                         <div className="card" onClick={() => { handleVIewroduct(item) }} >

@@ -23,7 +23,7 @@ export default function Cart({setCart}) {
     return (
         <div className="wishlist-layer" onClick={(e) => { e.stopPropagation() }}>
             <h1 className='text-center text_white'>Cart</h1>
-            <div className="d-flex fdc g2">{
+            <div className="d-flex fdc g3">{
                 cart?.map((item) => {
                     return (
                         <div className="card" onClick={() => { handleVIewroduct(item) }} >
